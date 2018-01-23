@@ -19,6 +19,12 @@
 		2E39C34E200EE3C50022B8E3 /* YNToolboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */; };
 		2E39C350200EE3D30022B8E3 /* YNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C34F200EE3D30022B8E3 /* YNSettingViewController.swift */; };
 		2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA14079201197460043DF61 /* YNAccountModel.swift */; };
+		2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A192015CF8000139734 /* SQLiteManager.swift */; };
+		2EB99A1D2015CFD800139734 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB99A1C2015CFD800139734 /* libsqlite3.tbd */; };
+		2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A232016CE4900139734 /* YNGestureCodeViewController.swift */; };
+		2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A252016D09200139734 /* YNGestureCodeView.swift */; };
+		2EB99A282016D0E800139734 /* UIView+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A272016D0E800139734 /* UIView+Extend.swift */; };
+		2EB99A2A2017084300139734 /* YNNumberCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A292017084300139734 /* YNNumberCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,13 @@
 		2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNToolboxViewController.swift; sourceTree = "<group>"; };
 		2E39C34F200EE3D30022B8E3 /* YNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNSettingViewController.swift; sourceTree = "<group>"; };
 		2EA14079201197460043DF61 /* YNAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountModel.swift; sourceTree = "<group>"; };
+		2EB99A192015CF8000139734 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		2EB99A1C2015CFD800139734 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2EB99A202015D29B00139734 /* MyPassword_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPassword_Bridge.h; sourceTree = "<group>"; };
+		2EB99A232016CE4900139734 /* YNGestureCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNGestureCodeViewController.swift; sourceTree = "<group>"; };
+		2EB99A252016D09200139734 /* YNGestureCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNGestureCodeView.swift; sourceTree = "<group>"; };
+		2EB99A272016D0E800139734 /* UIView+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extend.swift"; sourceTree = "<group>"; };
+		2EB99A292017084300139734 /* YNNumberCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNNumberCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB99A1D2015CFD800139734 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +68,7 @@
 			children = (
 				2E22B775200ED827003AF876 /* MyPassword */,
 				2E22B774200ED827003AF876 /* Products */,
+				2EB99A1B2015CFD800139734 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +98,7 @@
 		2E22B788200ED861003AF876 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2EB99A272016D0E800139734 /* UIView+Extend.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -103,6 +119,7 @@
 			children = (
 				2E22B776200ED827003AF876 /* AppDelegate.swift */,
 				2E22B78D200EDC30003AF876 /* YNConstant.swift */,
+				2EB99A202015D29B00139734 /* MyPassword_Bridge.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -117,6 +134,7 @@
 		2E39C342200EE23B0022B8E3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2EB99A182015CF5500139734 /* DB */,
 				2E39C343200EE23B0022B8E3 /* Bases */,
 			);
 			path = Common;
@@ -218,6 +236,7 @@
 		2E39C360200EF45E0022B8E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2EB99A232016CE4900139734 /* YNGestureCodeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +244,8 @@
 		2E39C362200EF45E0022B8E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2EB99A252016D09200139734 /* YNGestureCodeView.swift */,
+				2EB99A292017084300139734 /* YNNumberCodeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +312,22 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2EB99A182015CF5500139734 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				2EB99A192015CF8000139734 /* SQLiteManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		2EB99A1B2015CFD800139734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EB99A1C2015CFD800139734 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,14 +401,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB99A2A2017084300139734 /* YNNumberCodeView.swift in Sources */,
+				2EB99A282016D0E800139734 /* UIView+Extend.swift in Sources */,
 				2E22B78E200EDC30003AF876 /* YNConstant.swift in Sources */,
 				2E17A5B820104C9A00D1B1D2 /* YNAddAccountViewController.swift in Sources */,
 				2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */,
 				2E39C348200EE23B0022B8E3 /* BaseTabBarController.swift in Sources */,
+				2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */,
+				2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */,
 				2E22B777200ED827003AF876 /* AppDelegate.swift in Sources */,
 				2E39C347200EE23B0022B8E3 /* BaseNavigationController.swift in Sources */,
 				2E39C350200EE3D30022B8E3 /* YNSettingViewController.swift in Sources */,
 				2E39C349200EE23B0022B8E3 /* BaseViewController.swift in Sources */,
+				2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */,
 				2E22B78C200ED8C7003AF876 /* YNAccountViewController.swift in Sources */,
 				2E39C34E200EE3C50022B8E3 /* YNToolboxViewController.swift in Sources */,
 			);
@@ -508,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekzyn.MyPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MyPassword/Config/MyPassword_Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,6 +566,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geekzyn.MyPassword;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MyPassword/Config/MyPassword_Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -50,10 +50,10 @@ func RandomColor() -> UIColor {
 }
 
 //MARK:----屏幕frame------
-let kScreenWidth = UIScreen.main.bounds.size.width
-let KScreenHeight = UIScreen.main.bounds.size.height
-let kScreenSize = UIScreen.main.bounds.size
-let kScreenBounds = UIScreen.main.bounds
+let yn_screenWidth = UIScreen.main.bounds.size.width
+let yn_screenHeight = UIScreen.main.bounds.size.height
+let yn_screenSize = UIScreen.main.bounds.size
+let yn_screenBounds = UIScreen.main.bounds
 
 
 

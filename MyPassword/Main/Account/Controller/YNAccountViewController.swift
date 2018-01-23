@@ -15,6 +15,12 @@ class YNAccountViewController: BaseViewController {
         super.viewDidLoad()
 
         initDefault()
+        
+       let success = SQLiteManager.instance.openDB()
+        
+        if success {
+            YNLog("打开数据库成功")
+        }
     }
 
     override func didReceiveMemoryWarning() {
