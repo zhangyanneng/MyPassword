@@ -19,6 +19,7 @@
 		2E39C34E200EE3C50022B8E3 /* YNToolboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */; };
 		2E39C350200EE3D30022B8E3 /* YNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C34F200EE3D30022B8E3 /* YNSettingViewController.swift */; };
 		2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA14079201197460043DF61 /* YNAccountModel.swift */; };
+		2EA3BCB820196B8300AAF6A9 /* String+Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */; };
 		2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A192015CF8000139734 /* SQLiteManager.swift */; };
 		2EB99A1D2015CFD800139734 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB99A1C2015CFD800139734 /* libsqlite3.tbd */; };
 		2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A232016CE4900139734 /* YNGestureCodeViewController.swift */; };
@@ -42,6 +43,7 @@
 		2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNToolboxViewController.swift; sourceTree = "<group>"; };
 		2E39C34F200EE3D30022B8E3 /* YNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNSettingViewController.swift; sourceTree = "<group>"; };
 		2EA14079201197460043DF61 /* YNAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountModel.swift; sourceTree = "<group>"; };
+		2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encrypt.swift"; sourceTree = "<group>"; };
 		2EB99A192015CF8000139734 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		2EB99A1C2015CFD800139734 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2EB99A202015D29B00139734 /* MyPassword_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPassword_Bridge.h; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				2EB99A272016D0E800139734 /* UIView+Extend.swift */,
+				2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				2E22B78E200EDC30003AF876 /* YNConstant.swift in Sources */,
 				2E17A5B820104C9A00D1B1D2 /* YNAddAccountViewController.swift in Sources */,
 				2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */,
+				2EA3BCB820196B8300AAF6A9 /* String+Encrypt.swift in Sources */,
 				2E39C348200EE23B0022B8E3 /* BaseTabBarController.swift in Sources */,
 				2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */,
 				2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */,
@@ -545,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyPassword/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -561,6 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MyPassword/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -44,24 +44,22 @@ class YNAddAccountViewController: BaseViewController {
         view.addSubview(rePasswordTextField)
         view.addSubview(markLabel)
         view.addSubview(markTextView)
+        view.addSubview(safeLabel)
+        view.addSubview(safeSwitch)
         
         let  width = yn_screenWidth - 30
         
-        accountTextField.frame = CGRect(x: 15, y: 60 + 20, width: width, height: 21);
-        passwordTextField.frame = CGRect(x: 15, y: 111, width: width, height: 21)
-        rePasswordTextField.frame = CGRect(x: 15, y: 141, width: width, height: 21);
+        accountTextField.frame = CGRect(x: 15, y: 100, width: width, height: 21);
+        passwordTextField.frame = CGRect(x: 15, y: accountTextField.y + 50, width: width, height: 21)
+        rePasswordTextField.frame = CGRect(x: 15, y: passwordTextField.y + 50, width: width, height: 21)
+        
+        safeLabel.frame = CGRect(x: 15, y: rePasswordTextField.y + 50, width: 100, height: 21)
+        safeSwitch.x = safeLabel.right + 15;
+        safeSwitch.centerY = safeLabel.centerY
         
     }
     
     //MARK: lazy method
-//    lazy var accountLabel: UILabel = {() -> UILabel in
-//        let accountLab = UILabel()
-//        accountLab.text = "账号"
-//        accountLab.textColor = UIColor.black
-//
-//        return accountLab
-//    }()
-    
     lazy var accountTextField: UITextField = {() -> UITextField in
         let account = UITextField()
         account.placeholder = "请输入账号"
@@ -69,12 +67,6 @@ class YNAddAccountViewController: BaseViewController {
         account.font = UIFont.systemFont(ofSize: 15)
         return account
     }()
-    
-//    lazy var passwordLabel: UILabel = {() -> UILabel in
-//        let passwordLab = UILabel()
-//
-//        return passwordLab
-//    }()
     
     lazy var passwordTextField: UITextField = {() -> UITextField in
         let password = UITextField()
@@ -104,6 +96,17 @@ class YNAddAccountViewController: BaseViewController {
         return mark
     }()
     
+    lazy var safeLabel: UILabel  = { () -> UILabel in
+        let safeLab = UILabel()
+       safeLab.text = "安全加密"
+        return safeLab
+    }()
+    
+    lazy var safeSwitch: UISwitch = { () -> UISwitch in
+        let safeSwi = UISwitch()
+        safeSwi.setOn(true, animated: true)
+        return safeSwi;
+    }()
     
     @objc
     func closeBtnClick(){

@@ -12,7 +12,7 @@ class YNToolboxViewController: BaseViewController {
     
     let kCellIdentifier = "toolbox_cell_identifier"
     
-    let dataArray = ["计算器","汇率计算","拍照翻译","扫一扫"]
+    let dataArray = ["手势密码","记账","汇率计算","拍照翻译","扫一扫"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class YNToolboxViewController: BaseViewController {
         let tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.delegate = self;
         tableView.dataSource = self;
-        
+        tableView.tableFooterView = UIView()
         tableView .register(UITableViewCell.self, forCellReuseIdentifier: kCellIdentifier)
         
         return tableView;
@@ -57,7 +57,9 @@ extension YNToolboxViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.navigationController?.pushViewController(YNGestureCodeViewController(), animated: true)
+        if indexPath.row == 0 {
+            self.navigationController?.pushViewController(YNGestureCodeViewController(), animated: true)
+        }
     }
     
     

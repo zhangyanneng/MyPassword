@@ -13,6 +13,8 @@ class YNGestureCodeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "手势密码"
+        
         view.addSubview(self.gestureView)
         
         self.gestureView.passwordBlock = { (str) in

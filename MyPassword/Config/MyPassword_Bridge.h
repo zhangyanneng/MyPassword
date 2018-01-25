@@ -10,5 +10,6 @@
 #define MyPassword_Bridge_h
 
 #import "SQLite3.h"
+#import <CommonCrypto/CommonHMAC.h> //用于加密
 
 #endif /* MyPassword_Bridge_h */

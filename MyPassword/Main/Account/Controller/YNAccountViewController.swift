@@ -10,17 +10,20 @@ import UIKit
 
 class YNAccountViewController: BaseViewController {
     
+    var accountArrays:NSArray = YNAccountModel.accountDatas()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initDefault()
         
-       let success = SQLiteManager.instance.openDB()
-        
-        if success {
-            YNLog("打开数据库成功")
-        }
+//        let str = "123456"
+//        YNLog("md5:\(str.md5)")
+//        YNLog("SHA1:\(str.sha1)")
+//        YNLog("sha256:\(str.sha256)")
+//        YNLog("sha512:\(str.sha512)")
+//        YNLog("hmac:\(str.hmac(algorithm: .MD5, key: "ABFD"))")
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,7 +68,7 @@ extension YNAccountViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5;
+        return self.accountArrays.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,8 +77,10 @@ extension YNAccountViewController: UITableViewDelegate,UITableViewDataSource {
             cell = UITableViewCell (style: .subtitle, reuseIdentifier: "cell_identifier")
         }
         
-        cell?.textLabel?.text = "zynAccount"
-        cell?.detailTextLabel?.text = "abc123456"
+        let model: YNAccountModel = self.accountArrays[indexPath.row] as! YNAccountModel;
+        
+        cell?.textLabel?.text = model.account
+        cell?.detailTextLabel?.text = model.password
         return cell!;
     }
     

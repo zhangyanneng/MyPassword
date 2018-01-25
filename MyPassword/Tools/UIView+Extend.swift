@@ -63,5 +63,59 @@ extension UIView {
             self.frame.origin.x = newValue
         }
     }
+    
+    var left:CGFloat {
+        get {
+            return self.frame.origin.x
+        }
+        set {
+            self.frame.origin.x = newValue
+        }
+    }
+    
+    var right:CGFloat {
+        get {
+            return self.x + self.width
+        }
+        set {
+            self.frame.origin.x = newValue - self.width
+        }
+    }
+    
+    var top:CGFloat {
+        get {
+            return self.frame.origin.y
+        }
+        set {
+            self.frame.origin.y = newValue
+        }
+    }
+    
+    var bottom:CGFloat {
+        get {
+            return self.frame.origin.y + self.height
+        }
+        set {
+            self.frame.origin.y = newValue - self.height
+        }
+    }
+    
+    var centerX:CGFloat {
+        get {
+            return self.center.x
+        }
+        set {
+            self.center.x = newValue
+        }
+    }
+    
+    var centerY:CGFloat {
+        get {
+            return self.center.y
+        }
+        set {
+            self.center.y = newValue
+        }
+    }
    
 }
