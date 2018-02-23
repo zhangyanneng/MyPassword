@@ -18,6 +18,8 @@
 		2E39C349200EE23B0022B8E3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C346200EE23B0022B8E3 /* BaseViewController.swift */; };
 		2E39C34E200EE3C50022B8E3 /* YNToolboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */; };
 		2E39C350200EE3D30022B8E3 /* YNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E39C34F200EE3D30022B8E3 /* YNSettingViewController.swift */; };
+		2E9D4FC2201AC7AA0034805D /* YNAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D4FC1201AC7AA0034805D /* YNAccountTableViewCell.swift */; };
+		2E9D4FC4201AD3F40034805D /* YNAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D4FC3201AD3F40034805D /* YNAccountViewModel.swift */; };
 		2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA14079201197460043DF61 /* YNAccountModel.swift */; };
 		2EA3BCB820196B8300AAF6A9 /* String+Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */; };
 		2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A192015CF8000139734 /* SQLiteManager.swift */; };
@@ -26,6 +28,7 @@
 		2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A252016D09200139734 /* YNGestureCodeView.swift */; };
 		2EB99A282016D0E800139734 /* UIView+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A272016D0E800139734 /* UIView+Extend.swift */; };
 		2EB99A2A2017084300139734 /* YNNumberCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A292017084300139734 /* YNNumberCodeView.swift */; };
+		2EE180DE20283C010067121F /* YNInitDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE180DD20283C010067121F /* YNInitDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,8 @@
 		2E39C346200EE23B0022B8E3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNToolboxViewController.swift; sourceTree = "<group>"; };
 		2E39C34F200EE3D30022B8E3 /* YNSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNSettingViewController.swift; sourceTree = "<group>"; };
+		2E9D4FC1201AC7AA0034805D /* YNAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountTableViewCell.swift; sourceTree = "<group>"; };
+		2E9D4FC3201AD3F40034805D /* YNAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountViewModel.swift; sourceTree = "<group>"; };
 		2EA14079201197460043DF61 /* YNAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountModel.swift; sourceTree = "<group>"; };
 		2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encrypt.swift"; sourceTree = "<group>"; };
 		2EB99A192015CF8000139734 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		2EB99A252016D09200139734 /* YNGestureCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNGestureCodeView.swift; sourceTree = "<group>"; };
 		2EB99A272016D0E800139734 /* UIView+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extend.swift"; sourceTree = "<group>"; };
 		2EB99A292017084300139734 /* YNNumberCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNNumberCodeView.swift; sourceTree = "<group>"; };
+		2EE180DD20283C010067121F /* YNInitDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNInitDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA14079201197460043DF61 /* YNAccountModel.swift */,
+				2E9D4FC3201AD3F40034805D /* YNAccountViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +320,7 @@
 		2E39C36C200EF4A70022B8E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E9D4FC1201AC7AA0034805D /* YNAccountTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				2EB99A192015CF8000139734 /* SQLiteManager.swift */,
+				2EE180DD20283C010067121F /* YNInitDB.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -407,6 +416,7 @@
 				2EB99A2A2017084300139734 /* YNNumberCodeView.swift in Sources */,
 				2EB99A282016D0E800139734 /* UIView+Extend.swift in Sources */,
 				2E22B78E200EDC30003AF876 /* YNConstant.swift in Sources */,
+				2E9D4FC2201AC7AA0034805D /* YNAccountTableViewCell.swift in Sources */,
 				2E17A5B820104C9A00D1B1D2 /* YNAddAccountViewController.swift in Sources */,
 				2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */,
 				2EA3BCB820196B8300AAF6A9 /* String+Encrypt.swift in Sources */,
@@ -414,7 +424,9 @@
 				2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */,
 				2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */,
 				2E22B777200ED827003AF876 /* AppDelegate.swift in Sources */,
+				2E9D4FC4201AD3F40034805D /* YNAccountViewModel.swift in Sources */,
 				2E39C347200EE23B0022B8E3 /* BaseNavigationController.swift in Sources */,
+				2EE180DE20283C010067121F /* YNInitDB.swift in Sources */,
 				2E39C350200EE3D30022B8E3 /* YNSettingViewController.swift in Sources */,
 				2E39C349200EE23B0022B8E3 /* BaseViewController.swift in Sources */,
 				2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */,

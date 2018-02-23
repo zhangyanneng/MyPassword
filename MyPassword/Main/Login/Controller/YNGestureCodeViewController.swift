@@ -21,7 +21,6 @@ class YNGestureCodeViewController: BaseViewController {
 
             YNLog(str)
         }
-        
     }
     
     lazy var gestureView: YNGestureCodeView =  {() -> YNGestureCodeView in

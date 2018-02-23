@@ -16,11 +16,13 @@ enum YNSafeType {
 
 class YNAccountModel: NSObject {
     
+    var id: NSInteger?
     var name: String?
     var account: String?
     var password: String?
     var createDate: NSDate = NSDate()
     var type: YNSafeType = .NORMAL
+    var mark: String?
     
     //字典转模型
     override init() {
@@ -40,25 +42,5 @@ class YNAccountModel: NSObject {
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
         
     }
-
-    //设置示例数据
-    class func accountDatas() -> NSArray {
-        
-        let arrM:NSMutableArray = NSMutableArray()
-        
-        for index in 0...8 {
-            
-            let account: YNAccountModel = YNAccountModel()
-            account.account = "9999\(index+1)"
-            account.password = "66666\(index)"
-            account.type = .NORMAL
-            account.name = "me"
-            
-            arrM .add(account)
-        }
-        
-        return arrM.copy() as! NSArray
-    }
-    
     
 }

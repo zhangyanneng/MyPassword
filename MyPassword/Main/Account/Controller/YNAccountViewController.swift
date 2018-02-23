@@ -10,19 +10,12 @@ import UIKit
 
 class YNAccountViewController: BaseViewController {
     
-    var accountArrays:NSArray = YNAccountModel.accountDatas()
+    var accountArrays:NSArray = YNAccountViewModel.accountDatas()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initDefault()
-        
-//        let str = "123456"
-//        YNLog("md5:\(str.md5)")
-//        YNLog("SHA1:\(str.sha1)")
-//        YNLog("sha256:\(str.sha256)")
-//        YNLog("sha512:\(str.sha512)")
-//        YNLog("hmac:\(str.hmac(algorithm: .MD5, key: "ABFD"))")
        
     }
 
@@ -39,7 +32,6 @@ class YNAccountViewController: BaseViewController {
         
         //UI
         view .addSubview(self.tableview)
-        
     }
     
     
@@ -56,7 +48,7 @@ class YNAccountViewController: BaseViewController {
         let tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 60
+        tableView.estimatedRowHeight = 60
         tableView.tableFooterView = UIView()
         return tableView;
     }()
@@ -72,18 +64,29 @@ extension YNAccountViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell_identifier")
+        var cell: YNAccountTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell_identifier") as? YNAccountTableViewCell
         if cell == nil {
-            cell = UITableViewCell (style: .subtitle, reuseIdentifier: "cell_identifier")
+            cell = YNAccountTableViewCell (style: .subtitle, reuseIdentifier: "cell_identifier")
         }
         
-        let model: YNAccountModel = self.accountArrays[indexPath.row] as! YNAccountModel;
-        
-        cell?.textLabel?.text = model.account
-        cell?.detailTextLabel?.text = model.password
+        let vModel: YNAccountViewModel = self.accountArrays[indexPath.row] as! YNAccountViewModel;
+        cell?.accountModel = vModel
         return cell!;
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vModel: YNAccountViewModel = self.accountArrays[indexPath.row] as! YNAccountViewModel;
+        
+        vModel.rowHeight = vModel.rowHeight < 100 ? 100 : 60
+        
+        tableView .reloadRows(at: [indexPath], with: .automatic)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let vModel: YNAccountViewModel = self.accountArrays[indexPath.row] as! YNAccountViewModel
+        return vModel.rowHeight
+    }
     
     
 }

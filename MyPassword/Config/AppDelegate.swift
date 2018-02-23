@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //MARK:初始化数据库
+        SQLiteManager.shareInstance().openDB()
+        YNInitDB().initDB()
+        
+        
         self.window = UIWindow()
         self.window?.rootViewController = BaseTabBarController();
         self.window?.makeKeyAndVisible();
