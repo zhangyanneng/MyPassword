@@ -22,13 +22,11 @@
 		2E9D4FC4201AD3F40034805D /* YNAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D4FC3201AD3F40034805D /* YNAccountViewModel.swift */; };
 		2EA1407A201197460043DF61 /* YNAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA14079201197460043DF61 /* YNAccountModel.swift */; };
 		2EA3BCB820196B8300AAF6A9 /* String+Encrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */; };
-		2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A192015CF8000139734 /* SQLiteManager.swift */; };
 		2EB99A1D2015CFD800139734 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB99A1C2015CFD800139734 /* libsqlite3.tbd */; };
 		2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A232016CE4900139734 /* YNGestureCodeViewController.swift */; };
 		2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A252016D09200139734 /* YNGestureCodeView.swift */; };
 		2EB99A282016D0E800139734 /* UIView+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A272016D0E800139734 /* UIView+Extend.swift */; };
 		2EB99A2A2017084300139734 /* YNNumberCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A292017084300139734 /* YNNumberCodeView.swift */; };
-		2EE180DE20283C010067121F /* YNInitDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE180DD20283C010067121F /* YNInitDB.swift */; };
 		2EF5A537205F4752004A2CCC /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5A536205F4752004A2CCC /* RateViewController.swift */; };
 		A6999A22096A2FD86A130BBE /* Pods_MyPassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6496F2513C7230B0E8CF9551 /* Pods_MyPassword.framework */; };
 /* End PBXBuildFile section */
@@ -52,14 +50,12 @@
 		2E9D4FC3201AD3F40034805D /* YNAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountViewModel.swift; sourceTree = "<group>"; };
 		2EA14079201197460043DF61 /* YNAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAccountModel.swift; sourceTree = "<group>"; };
 		2EA3BCB720196B8300AAF6A9 /* String+Encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encrypt.swift"; sourceTree = "<group>"; };
-		2EB99A192015CF8000139734 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		2EB99A1C2015CFD800139734 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2EB99A202015D29B00139734 /* MyPassword_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPassword_Bridge.h; sourceTree = "<group>"; };
 		2EB99A232016CE4900139734 /* YNGestureCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNGestureCodeViewController.swift; sourceTree = "<group>"; };
 		2EB99A252016D09200139734 /* YNGestureCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNGestureCodeView.swift; sourceTree = "<group>"; };
 		2EB99A272016D0E800139734 /* UIView+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extend.swift"; sourceTree = "<group>"; };
 		2EB99A292017084300139734 /* YNNumberCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNNumberCodeView.swift; sourceTree = "<group>"; };
-		2EE180DD20283C010067121F /* YNInitDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNInitDB.swift; sourceTree = "<group>"; };
 		2EF5A536205F4752004A2CCC /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		6496F2513C7230B0E8CF9551 /* Pods_MyPassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA2C090D97411051EB376D5 /* Pods-MyPassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPassword.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword.release.xcconfig"; sourceTree = "<group>"; };
@@ -337,8 +333,6 @@
 		2EB99A182015CF5500139734 /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				2EB99A192015CF8000139734 /* SQLiteManager.swift */,
-				2EE180DD20283C010067121F /* YNInitDB.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -472,10 +466,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,11 +494,9 @@
 				2EA3BCB820196B8300AAF6A9 /* String+Encrypt.swift in Sources */,
 				2E39C348200EE23B0022B8E3 /* BaseTabBarController.swift in Sources */,
 				2EB99A242016CE4900139734 /* YNGestureCodeViewController.swift in Sources */,
-				2EB99A1A2015CF8000139734 /* SQLiteManager.swift in Sources */,
 				2E22B777200ED827003AF876 /* AppDelegate.swift in Sources */,
 				2E9D4FC4201AD3F40034805D /* YNAccountViewModel.swift in Sources */,
 				2E39C347200EE23B0022B8E3 /* BaseNavigationController.swift in Sources */,
-				2EE180DE20283C010067121F /* YNInitDB.swift in Sources */,
 				2E39C350200EE3D30022B8E3 /* YNSettingViewController.swift in Sources */,
 				2E39C349200EE23B0022B8E3 /* BaseViewController.swift in Sources */,
 				2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */,
