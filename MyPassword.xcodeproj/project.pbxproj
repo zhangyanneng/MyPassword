@@ -29,9 +29,12 @@
 		2EB99A282016D0E800139734 /* UIView+Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A272016D0E800139734 /* UIView+Extend.swift */; };
 		2EB99A2A2017084300139734 /* YNNumberCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB99A292017084300139734 /* YNNumberCodeView.swift */; };
 		2EE180DE20283C010067121F /* YNInitDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE180DD20283C010067121F /* YNInitDB.swift */; };
+		2EF5A537205F4752004A2CCC /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5A536205F4752004A2CCC /* RateViewController.swift */; };
+		A6999A22096A2FD86A130BBE /* Pods_MyPassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6496F2513C7230B0E8CF9551 /* Pods_MyPassword.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16D2B78F2EF2AA3C7B26EADF /* Pods-MyPassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPassword.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword.debug.xcconfig"; sourceTree = "<group>"; };
 		2E17A5B720104C9A00D1B1D2 /* YNAddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNAddAccountViewController.swift; sourceTree = "<group>"; };
 		2E22B773200ED827003AF876 /* MyPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E22B776200ED827003AF876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +60,9 @@
 		2EB99A272016D0E800139734 /* UIView+Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extend.swift"; sourceTree = "<group>"; };
 		2EB99A292017084300139734 /* YNNumberCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNNumberCodeView.swift; sourceTree = "<group>"; };
 		2EE180DD20283C010067121F /* YNInitDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNInitDB.swift; sourceTree = "<group>"; };
+		2EF5A536205F4752004A2CCC /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		6496F2513C7230B0E8CF9551 /* Pods_MyPassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA2C090D97411051EB376D5 /* Pods-MyPassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPassword.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EB99A1D2015CFD800139734 /* libsqlite3.tbd in Frameworks */,
+				A6999A22096A2FD86A130BBE /* Pods_MyPassword.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 				2E22B775200ED827003AF876 /* MyPassword */,
 				2E22B774200ED827003AF876 /* Products */,
 				2EB99A1B2015CFD800139734 /* Frameworks */,
+				CE60DCDAE6471E4D268BDA63 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +123,7 @@
 		2E22B789200ED870003AF876 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2E39C343200EE23B0022B8E3 /* Bases */,
 				2E39C35D200EF3E50022B8E3 /* Login */,
 				2E39C34C200EE3750022B8E3 /* Setting */,
 				2E39C34B200EE3510022B8E3 /* Toolbox */,
@@ -144,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				2EB99A182015CF5500139734 /* DB */,
-				2E39C343200EE23B0022B8E3 /* Bases */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				2E39C34D200EE3C50022B8E3 /* YNToolboxViewController.swift */,
+				2EF5A536205F4752004A2CCC /* RateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,8 +347,18 @@
 			isa = PBXGroup;
 			children = (
 				2EB99A1C2015CFD800139734 /* libsqlite3.tbd */,
+				6496F2513C7230B0E8CF9551 /* Pods_MyPassword.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE60DCDAE6471E4D268BDA63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16D2B78F2EF2AA3C7B26EADF /* Pods-MyPassword.debug.xcconfig */,
+				DBA2C090D97411051EB376D5 /* Pods-MyPassword.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,9 +368,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E22B785200ED827003AF876 /* Build configuration list for PBXNativeTarget "MyPassword" */;
 			buildPhases = (
+				7F61A3EE7E9ABEAECE4C502A /* [CP] Check Pods Manifest.lock */,
 				2E22B76F200ED827003AF876 /* Sources */,
 				2E22B770200ED827003AF876 /* Frameworks */,
 				2E22B771200ED827003AF876 /* Resources */,
+				FD34A974F47D785D57F1231E /* [CP] Embed Pods Frameworks */,
+				812C79188FC7DEFDD8BD2CB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +430,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F61A3EE7E9ABEAECE4C502A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPassword-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		812C79188FC7DEFDD8BD2CB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD34A974F47D785D57F1231E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPassword/Pods-MyPassword-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E22B76F200ED827003AF876 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -431,6 +507,7 @@
 				2E39C349200EE23B0022B8E3 /* BaseViewController.swift in Sources */,
 				2EB99A262016D09200139734 /* YNGestureCodeView.swift in Sources */,
 				2E22B78C200ED8C7003AF876 /* YNAccountViewController.swift in Sources */,
+				2EF5A537205F4752004A2CCC /* RateViewController.swift in Sources */,
 				2E39C34E200EE3C50022B8E3 /* YNToolboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,10 +635,11 @@
 		};
 		2E22B786200ED827003AF876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D2B78F2EF2AA3C7B26EADF /* Pods-MyPassword.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 95X9N24D2E;
 				INFOPLIST_FILE = MyPassword/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -575,10 +653,11 @@
 		};
 		2E22B787200ED827003AF876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA2C090D97411051EB376D5 /* Pods-MyPassword.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 95X9N24D2E;
 				INFOPLIST_FILE = MyPassword/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

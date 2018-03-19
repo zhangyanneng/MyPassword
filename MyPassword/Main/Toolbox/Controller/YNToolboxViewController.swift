@@ -59,7 +59,11 @@ extension YNToolboxViewController: UITableViewDelegate,UITableViewDataSource {
         
         if indexPath.row == 0 {
             self.navigationController?.pushViewController(YNGestureCodeViewController(), animated: true)
+        } else if indexPath.row == 2 {
+            self.navigationController?.pushViewController(RateViewController(), animated: true)
         }
+        
+        
     }
     
     

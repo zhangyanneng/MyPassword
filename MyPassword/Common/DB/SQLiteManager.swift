@@ -121,8 +121,6 @@ class SQLiteManager: NSObject {
         
     }
     
-    
-    
     /// 引入事务操作
     ///
     /// - Parameter exec: 事务回调
@@ -159,11 +157,6 @@ class SQLiteManager: NSObject {
         objc_sync_exit(self)
     }
     
-    /**
-     另一种执行数据库的操作
-     
-     - parameter sql: 受影响的行数
-     */
     /// 执行数据库的操作（主要解析表中带有data类型字段）
     ///
     /// - Parameters:

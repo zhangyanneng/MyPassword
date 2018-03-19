@@ -16,10 +16,7 @@ class YNAccountViewModel: NSObject {
     
     public func insertAccountModelToDB() {
         
-        let sql = "insert "
-        
-        
-        
+//        let sql = "insert "
         
     }
     
